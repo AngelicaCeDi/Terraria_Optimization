@@ -1,7 +1,7 @@
 #Files
 *.py[cod]
 *.env
-
+*.sqlite3
 
 #Folders
 __pycache__/
