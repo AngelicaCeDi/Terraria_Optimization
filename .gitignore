@@ -1,0 +1,10 @@
+#Files
+*.py[cod]
+*.env
+
+
+#Folders
+__pycache__/
+
+
+#Exceptions
