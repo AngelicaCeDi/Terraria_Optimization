@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from .models import Npc
 def index(request):
-    return HttpResponse("<h1>Hola mundo mundial!!!</h1>")
+    context={"NPCs":Npc.objects.all()}
+    return render(request, template_name="index.html",context=context)
 # Create your views here.
 
 

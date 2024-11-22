@@ -1,0 +1,9 @@
+{% extends "components/base.html" %}
+{% block body %}
+    <h1>Lista de NPCs</h1>
+    <ul>
+        {% for Npc in NPCs %}
+            <li>{{Npc.name}}, weight={{Npc.weight}}</li>
+        {% endfor %}
+    </ul>
+{% endblock body %}
